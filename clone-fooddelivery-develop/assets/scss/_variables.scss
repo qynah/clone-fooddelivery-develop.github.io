@@ -1,0 +1,58 @@
+// Bootstrap overrides
+
+//grid breakpoints
+$grid-breakpoints    : (
+  xs                 : 0,
+  sm                 : 576px,
+  md                 : 768px,
+  lg                 : 992px,
+  xl                 : 1200px,
+  xxl                : 1440px
+); //to get value using map-get($grid-breakpoints, "lg")
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm                 : 540px,
+  md                 : 720px,
+  lg                 : 960px,
+  xl                 : 1140px,
+  xxl                : 1290px
+);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font_main                  : 'Montserrat', sans-serif;
+$font_secondary             : 'Montserrat', sans-serif;
+
+$font-size-base             : 1rem !default;
+$font-size-lg               : $font-size-base * 1.25 !default;
+$font-size-sm               : $font-size-base * .875 !default;
+$line-height-base           : 1.5 !default; 
+$headings-line-height       : 1.4 !default;
+$headings-font-weight       : 700 !default;
+
+//heading
+
+//base color
+$body-color                 : #646464; 
+$link-color                 : rgb(0, 89, 223);
+$primary                    : #FF4415; //1
+$secondary                  : #FEB618; //2
+$success                    : #00BE4C; //3
+$info                       : #21BDCA; //4
+$warning                    : #343A40; //5
+$danger                     : #F1F1F2; //6
+$light                      : #F0F0F0;
+$dark                       : #464646;
+$dark-blue                  : #ACACAC;
+$muted                      : #C4C4C4;
+
+$main_color                 : #646464;
+$active_color               : #EF3F4C;
+$theme-colors               : (
+  "muted"                    : $muted,
+  "dark-blue"               : $dark-blue,
+);

@@ -1,0 +1,136 @@
+section.section-blog {
+    .heading__blog {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: #101010;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(md) {
+            font-size: 52px;
+            line-height: 119%;
+        }
+
+        &::before {
+            content: 'Newar Me';
+            font-family: 'Seaweed Script';
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1;
+            color: $primary;
+            display: block;
+            margin-bottom: 8px;
+
+            @include media-breakpoint-up(md) {
+                font-size: 44px;
+                line-height: 125%;
+            }
+        }
+    }
+
+    .des__blog {
+        line-height: 175%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #646464;
+        max-width: 452px;
+        margin: 18px auto 0 auto;
+    }
+
+    .cards {
+        margin-top: 70px;
+        &__list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 33px;
+            &-item {
+                flex: 0 1 368px;
+
+                &-heading {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 79%;
+                    display: flex;
+                    color: #1b1b1b;
+                    margin-top: 32px;
+                    margin-bottom: 14px;
+                }
+
+                &-des {
+                    line-height: 162%;
+                    letter-spacing: -0.005em;
+                    color: #939393;
+                    margin-bottom: 24px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; /* number of lines to show */
+                            line-clamp: 2; 
+                    -webkit-box-orient: vertical;
+                }
+
+                .card-img {
+                    max-height: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .card-content {
+                    max-height: 244px;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .apply-now {
+                    width: 175px;
+                    border: 0;
+                    outline: none;
+                    padding: 12px 20px;
+                    box-shadow: 0px 10px 20px -10px rgba(58, 186, 90, 0.16);
+                    border-radius: 14px 16px 16px 16px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    align-items: center;
+
+                    &--green {
+                        background: linear-gradient(101.98deg, #46c266 41.25%, #2fb652 98.64%);
+                    }
+
+                    &--red {
+                        background: linear-gradient(101.98deg, #FF6741 41.25%, #FF4415 98.64%);
+                        img {
+                            filter: invert(56%) sepia(68%) saturate(3891%) hue-rotate(337deg) brightness(100%) contrast(102%);
+                        }
+                    }
+
+                    &--orange {
+                        background: linear-gradient(101.98deg, #FFBC2D 41.25%, #FEB618 98.64%);
+                        img {
+                            filter: invert(89%) sepia(198%) saturate(4589%) hue-rotate(386deg) brightness(141%) contrast(105%);
+                        }
+                    }
+
+                    .vector {
+                        background: #ffffff;
+                        box-shadow: 0px 10px 20px -8px rgba(185, 66, 42, 0.19);
+                        border-radius: 10px;
+                        width: 38px;
+                        height: 38px;
+                        margin-left: 14px;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

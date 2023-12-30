@@ -1,0 +1,238 @@
+section.section-hero {
+    padding-top: 26px;
+
+    .heading-hero {
+        font-weight: 700;
+        margin: 0;
+        color: #101010;
+        font-size: 32px;
+        line-height: 42px;
+        @include media-breakpoint-up(md) {
+            font-size: 42px;
+            line-height: 52px;
+        }
+        @include media-breakpoint-up(lg) {
+            line-height: 72px;
+            font-size: 62px;
+        }
+
+        &::before {
+            content: 'Hungry?';
+            font-family: 'Seaweed Script';
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 50px;
+            color: $primary;
+            display: block;
+            margin-bottom: 16px;
+        }
+    }
+
+    .hero-description {
+        line-height: 167%;
+        letter-spacing: -0.01em;
+        margin-top: 22px;
+        font-size: 16px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 18px;
+        }
+    }
+
+    .sign-to-our-community {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        color: #838383;
+        margin-top: 25px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 50px;
+        }
+
+        a {
+            color: #ff4d20;
+        }
+    }
+
+    .wrap-enter-location {
+        position: relative;
+        @include media-breakpoint-up(sm) {
+            display: flex;
+        }
+
+        #input-location {
+            background-color: #fff;
+            outline: none;
+            border: 0.5px solid #00be4c;
+            background-image: url('../images/aim.png');
+            background-position: 95% 50%;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 100%;
+            height: 64px;
+            padding: 24px 26px 24px 16px;
+            overflow: hidden;
+            border-radius: 15px;
+            @include media-breakpoint-up(sm) {
+                border-radius: 15px 0px 0px 15px;
+                border-right: 0;
+            }
+        }
+        button#discover {
+            background: linear-gradient(92.18deg, #3fda7d 48.17%, #00be4c 100%);
+            box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.4);
+            outline: none;
+            border: 0.5px solid #00be4c;
+            border-radius: 15px;
+            border-left: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: calc(19 / 16);
+            color: #fff;
+            position: relative;
+            text-align: left;
+            padding-left: 22px;
+            height: 64px;
+            margin-top: 16px;
+            width: 157px;
+
+            @include media-breakpoint-up(sm) {
+                width: 198px;
+                margin-top: 0;
+                border-radius: 0 15px 15px 0px;
+            }
+
+            .vector {
+                background: #ffffff;
+                box-shadow: 0px 10px 20px -8px rgba(185, 66, 42, 0.19);
+                border-radius: 10px;
+                width: 38px;
+                height: 38px;
+                position: absolute;
+                top: 50%;
+                right: 8%;
+                transform: translateY(-50%);
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(50%, -50%);
+                }
+            }
+        }
+    }
+
+    .img-hero {
+        width: 100%;
+        border-radius: 50px;
+        @include media-breakpoint-up(lg) {
+            width: calc(100% + 150px);
+            border-radius: 0;
+        }
+    }
+
+    .feature {
+        
+        h2 {
+            font-weight: 700;
+            line-height: 1;
+            font-size: 24px;
+            color: #101010;
+            letter-spacing: -0.01em;
+            margin-right: 5px;
+            margin-bottom: 0;
+            @include media-breakpoint-up(lg) {
+                font-size: 32px;
+                line-height: 1.18;
+            }
+        }
+
+        
+        &__arrow {
+            gap: 10px;
+            img {
+                width: 28px;
+                height: 28px;
+            }
+            button {
+                width: 29px;
+                height: 29px;
+                border-radius: 26px;
+                outline: none;
+                border: none;
+                position: relative;
+            }
+
+            img {
+                object-fit: cover;
+                width: 7px;
+                height: 12px;
+                position: absolute;
+                top: 30%;
+                right: 34%;
+            }
+
+            &--left {
+                background-color: #fff;
+            }
+
+            &--right {
+                background-color: #000;
+            }
+        }
+
+        .feature__list {
+            margin-top: 65px;
+            gap: 32px;
+            flex-wrap: wrap;
+
+            &-item {
+                height: 130px;
+                background: #f7f7f7;
+                border-radius: 24px;
+                padding: 20px 30px;
+                position: relative;
+                flex: 1 1 270px;
+                @include media-breakpoint-up(lg) {
+                    flex: 0 1 270px;
+                }
+                @include media-breakpoint-up(xl) {
+                    flex: 1 1 270px;
+                }
+            }
+        }
+        .feature__item {
+            &-title {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 100%;
+                color: #171717;
+                margin-bottom: 16px;
+            }
+
+            &-status {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 139%;
+                color: #969696;
+                margin-bottom: 5px;
+            }
+
+            &-price {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 139%;
+                color: #FF4415; 
+            }
+
+            &-img {
+                position: absolute;
+                top: -20%;
+                right: 0;
+            }
+        }
+    }
+}

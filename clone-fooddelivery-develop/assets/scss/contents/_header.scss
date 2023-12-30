@@ -1,0 +1,53 @@
+header.header {
+    margin-top: 26px;
+    height: 70px;
+    a.logo {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        text-decoration: none;
+        span {
+            display: inline-block;
+            color: black;
+            font-weight: 900;
+            font-size: 24px;
+        }
+    }
+
+    ul.menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        column-gap: 40px;
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #232323;
+            font-weight: 500;
+            transition: hover 1s ease-in-out;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    button.btn-sign-up {
+        border-radius: 12px;
+        background: linear-gradient(180deg, #272727 0%, #171717 46.01%, #101010 100%);
+        color: #fff;
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    button.btn-cart {
+        background: linear-gradient(156.8deg, #FF633C 15%, #FF4415 97.86%);
+        box-shadow: 0px 10px 20px -8px rgba(185, 66, 42, 0.19);
+        border-radius: 12px;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+    }
+}
